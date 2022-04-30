@@ -9,7 +9,7 @@ export async function getCrosschainHealth(): Promise<Healths | void> {
   const healthsByChainId: Healths = {}
 
   const chainDataRes = await fetch(
-    'https://raw.githubusercontent.com/connext/chaindata/main/crossChain.json',
+    'https://raw.githubusercontent.com/Auromony/chaindata/main/crossChain.json',
   )
   const chainData: any = await chainDataRes.json()
   console.log('chainData: ', JSON.stringify(chainData))

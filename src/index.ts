@@ -18,6 +18,10 @@ router.get('/router_livliness', async (req) => {
   return handleLivlinessRequest(req.url)
 })
 
+router.get('/cron', async (req) => {
+  return await handleCronJob()
+})
+
 //handles http
 addEventListener('fetch', (event) => {
   event.respondWith(router.handle(event.request))
