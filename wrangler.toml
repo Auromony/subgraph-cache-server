@@ -11,7 +11,8 @@ kv_namespaces = [
 ]
 webpack_config = "webpack.config.js"
 
-
+[triggers]
+crons = ["*/20 * * * *"]
 
 [build]
 command = "npm install && npm run build"
