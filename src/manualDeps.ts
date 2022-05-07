@@ -128,7 +128,7 @@ export const GET_SUBGRAPH_HEALTH_URL = (url: string): string | undefined => {
   } else if (url.includes("auromony-subgraph.loca.lt/subgraphs/name/connext")) {
     return "https://auromony-subgraph-index.loca.lt/graphql";
   } else if (url.includes("localhost:8000/subgraphs/name/connext")) {
-    return "https://auromony-subgraph-index.loca.lt/graphql";
+    return "http://auromony-subgraph-index.loca.lt/graphql";
   }
   return undefined;
 };
