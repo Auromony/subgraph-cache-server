@@ -125,10 +125,8 @@ export const GET_SUBGRAPH_HEALTH_URL = (url: string): string | undefined => {
     url.includes("subgraphs.connext.p2p.org/subgraphs/name/connext/nxtp-matic")
   ) {
     return "https://subgraphs.connext.p2p.org/nxtp-matic-health-check";
-  } else if (url.includes("auromony-subgraph.loca.lt/subgraphs/name/connext")) {
+  } else if (url.includes("auromony-subgraph.loca.lt/subgraphs/name/connext") || url.includes("localhost:8000/subgraphs/name/connext") || url.includes("34.238.30.189:8000/subgraphs/name/connext")) {
     return "https://auromony-subgraph-index.loca.lt/graphql";
-  } else if (url.includes("localhost:8000/subgraphs/name/connext")) {
-    return "http://auromony-subgraph-index.loca.lt/graphql";
   }
   return undefined;
 };

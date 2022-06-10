@@ -2,17 +2,16 @@ name = "subgraph-ts-worker"
 type = "javascript"
 zone_id = ""
 workers_dev = true
-compatibility_date = "2022-04-30"
+compatibility_date = "2022-06-10"
 account_id = "b118cf213a0c4b6287c5826741e04bcf" 
 
 kv_namespaces = [ 
-	 { binding = "HEALTHS", preview_id = "38b4fac996ef410f9a4660724507b895" },
-
+	 { id = "2271c6dfd9934ea88c47de267370011d", binding = "HEALTHS", preview_id = "38b4fac996ef410f9a4660724507b895" },
 ]
 webpack_config = "webpack.config.js"
 
 [triggers]
-crons = ["*/20 * * * *"]
+crons = ["*/3 * * * *"]
 
 [build]
 command = "npm install && npm run build"
