@@ -20,7 +20,7 @@ Local development (point querys to localhost):
 Purpose: To cache livliness of subgraph health endpoints used for NXTP.
 
 # Deployed To:
-**URL**:  https://subgraph-ts-worker.connext.workers.dev/subgraph_health/
+**URL**:  https://subgraph-ts-worker.globallager.workers.dev/subgraph_health/
 
 # Get All Health
 
